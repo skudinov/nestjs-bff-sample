@@ -1,0 +1,17 @@
+required:
+  - id
+  - mimeType
+  - name
+  - uri
+properties: 
+  id: 
+    type: "string"
+  mimeType: 
+    type: "string"
+  name: 
+    type: "string"
+#  ticket: 
+#    $ref: "#/definitions/Ticket"
+  uri: 
+    type: "string"
+type: "object"

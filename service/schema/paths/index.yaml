@@ -1,0 +1,6 @@
+/tickets:
+  $ref: ./tickets.yaml
+/components:
+  $ref: ./components.yaml
+/components/{id}
+  $ref: ./component-id.yaml

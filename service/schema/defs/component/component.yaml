@@ -1,0 +1,38 @@
+required:
+  - id
+  - code
+  - description
+  - name
+  - owner
+properties: 
+  code: 
+    type: "string"
+  description: 
+    type: "string"
+  id: 
+    type: "string"
+  name: 
+    type: "string"
+  owner: 
+    $ref: "./person.yaml"
+  parent:
+    type: "object"
+    required:
+      - id
+    properties: 
+      id: 
+        type: "string"
+  subs: 
+    items: 
+      type: "object"
+      required:
+        - id
+      properties: 
+        id: 
+          type: "string"
+    type: "array"
+  tickets: 
+    items: 
+      $ref: "./ticket.yaml"
+    type: "array"
+type: "object"

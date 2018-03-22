@@ -1,0 +1,40 @@
+required:
+  - id
+  - number
+  - priority
+  - processor
+  - reporter
+  - status
+  - subject
+  - version
+  - year
+  - component
+  - description
+type: "object"
+properties: 
+  attachments: 
+    items: 
+      $ref: "./attachment.yaml"
+    type: "array"
+  component: 
+    $ref: "./component.yaml"
+  description: 
+    type: "string"
+  id: 
+    type: "string"
+  number: 
+    type: "number"
+  priority: 
+    $ref: "./priority.yaml"
+  processor: 
+    $ref: "./person.yaml"
+  reporter: 
+    $ref: "./person.yaml"
+  status: 
+    $ref: "./status.yaml"
+  subject: 
+    type: "string"
+  version: 
+    type: "string"
+  year: 
+    type: "number"

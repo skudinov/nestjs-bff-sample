@@ -1,0 +1,11 @@
+get: 
+  summary: "gets tickets collection"
+  produces: 
+    - "application/json"
+  responses: 
+    200: 
+      description: "successful operation"
+      schema: 
+        type: "array"
+        items: 
+          $ref: "#/definitions/Ticket"

@@ -1,0 +1,4 @@
+Ticket:
+  $ref: ./ticket/ticket.yaml
+Component:
+  $ref: ./component/component.yaml
