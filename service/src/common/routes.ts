@@ -1,18 +1,9 @@
 import * as Router from 'koa-router';
+import {IParamMiddleware} from 'koa-router';
+export const router = new Router();
 
-export interface IRoute {
-  methods: string[];
-  path: string | RegExp;
-  handler: Router.IMiddleware;
-  opts?: object;
-}
-
-export class Routes extends Array<IRoute> {
-  register(): Router.IMiddleware {
-    const router = new Router();
-    this.forEach((route) => {
-      router.register(route.path, route.methods, route.handler, route.opts);
-    });
-    return router.routes();
-  }
+export const sureIsGUID: IParamMiddleware = (id, ctx, next) => {
+  // validate if id is guid
+  return id.match(/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i)?
+    next(): ctx.status = 400;
 }

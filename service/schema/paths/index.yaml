@@ -2,5 +2,5 @@
   $ref: ./tickets.yaml
 /components:
   $ref: ./components.yaml
-/components/{id}
+/components/{id}:
   $ref: ./component-id.yaml

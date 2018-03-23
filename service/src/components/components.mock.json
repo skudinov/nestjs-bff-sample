@@ -1,0 +1,24 @@
+[
+  {
+    "id": "2dcbe060-1f49-4cea-aba3-10770ee2e7a3",
+    "code": "dolore officia Ut",
+    "description": "culp",
+    "name": "cillum",
+    "owner": {
+      "id": "288f2613-084d-41e5-b7ab-16a3728bca62"
+    },
+    "subs": [
+      {
+        "id": "d654daca-02ef-45b7-86a5-b8351aa9007a"
+      },
+      {
+        "id": "c3cd9b3e-dfda-411c-96d0-85c651cf60d2"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "cc80cf00-1c56-4e78-8bc0-7ae269d46d0b"
+      }
+    ]
+  }
+]
