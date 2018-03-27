@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
 import { TestingModule } from '@nestjs/testing/testing-module';
-import { TicketsService } from './tick.service.ts';
+import { TicketsService } from './tickets.service';
 import { expect } from 'chai';
 
 describe('TicketsService', () => {
