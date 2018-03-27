@@ -1,7 +1,11 @@
-export const fetch_h2_mock = (expected) => { return {
-  setup: (opts) => {
+
+let _expected;
+export const mock = {
+  // aux functions
+  expect: (expected) => _expected = expected,
+  // mocked functions
+  setup: () => {
   },
-  fetch: (url) => {
-    return Promise.resolve({json: () => expected});
-  }
-}};
+  fetch: (url) => Promise.resolve({json: () => _expected}),
+};
+
