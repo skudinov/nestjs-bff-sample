@@ -10,7 +10,9 @@
     "start": "node index.js",
     "start:watch": "nodemon",
     "prestart:prod": "tsc",
-    "start:prod": "node dist/main.js"
+    "start:prod": "node dist/main.js",
+    "test": "nyc -e .ts -x *.spec.ts jasmine-ts src/**/*.spec.ts",
+    "coverage": "npm run test && nyc report --reporter=html"
   },
   "dependencies": {
     "@nestjs/common": "^4.5.9",
@@ -33,6 +35,7 @@
     "typescript": "^2.6.2"
   },
   "devDependencies": {
+    "@types/jasmine": "^2.8.6",
     "@types/koa": "^2.0.44",
     "@types/koa-pino-logger": "^2.1.1",
     "@types/koa-router": "^7.0.27",
@@ -43,8 +46,10 @@
     "cross-env": "^5.1.4",
     "cross-var": "git+https://github.com/skudinov/cross-var.git",
     "jasmine": "^3.1.0",
+    "jasmine-ts": "^0.2.1",
     "multi-file-swagger": "^2.2.0",
     "nodemon": "^1.14.1",
+    "nyc": "^11.6.0",
     "rimraf": "^2.6.2",
     "ts-node": "^5.0.1",
     "tsconfig-paths": "^3.1.3",

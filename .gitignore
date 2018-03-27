@@ -1,3 +1,7 @@
+# Istanbul
+coverage
+.nyc_output
+
 # IDE
 .idea
 
