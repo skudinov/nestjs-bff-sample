@@ -1,8 +1,8 @@
 import {ApiModelProperty} from '@nestjs/swagger';
+import {IsUUID} from 'class-validator';
 
-export class Person {
+export class Reference {
   @ApiModelProperty({ type: String})
-  id: string;
-  @ApiModelProperty({ type: String})
-  name: string;
+  @IsUUID()
+  id: string
 }

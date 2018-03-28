@@ -18,9 +18,12 @@
     "@nestjs/common": "^4.5.9",
     "@nestjs/core": "^4.5.10",
     "@nestjs/microservices": "^4.5.8",
+    "@nestjs/swagger": "^1.1.4",
     "@nestjs/testing": "^4.5.5",
     "@nestjs/websockets": "^4.5.8",
     "assert-plus": "^1.0.0",
+    "class-validator": "^0.8.5",
+    "express": "^4.16.3",
     "fetch-h2": "^0.2.5",
     "koa": "^2.5.0",
     "koa-pino-logger": "^2.1.3",
@@ -35,6 +38,7 @@
     "typescript": "^2.6.2"
   },
   "devDependencies": {
+    "@types/express": "^4.11.1",
     "@types/jasmine": "^2.8.6",
     "@types/koa": "^2.0.44",
     "@types/koa-pino-logger": "^2.1.1",

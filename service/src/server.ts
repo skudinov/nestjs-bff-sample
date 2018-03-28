@@ -20,7 +20,7 @@ app.use(pino);
 // define app routes
 
 // route to return API schema
-router.get('/schema.json', async (ctx) => {
+router.get('/api-schema', async (ctx) => {
   await send(ctx, 'schema.json');
 });
 
@@ -32,7 +32,7 @@ app.use(
   koaSwagger({
     routePrefix: '/api-docs', // host at /swagger instead of default /docs
     swaggerOptions: {
-      url: `https://localhost:${port}/schema.json`, // example path to json
+      url: `https://localhost:${port}/api-schema`, // example path to json
     },
   }),
 );
