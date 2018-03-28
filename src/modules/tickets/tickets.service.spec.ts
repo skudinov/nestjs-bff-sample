@@ -30,5 +30,8 @@ describe('TicketsService', () => {
       const received = await service.findAll();
       expect(received).toBe(expected);
     });
+    it('failed call', async () => {
+      // TODO unit tested negative logic flow
+    });
   });
 });
